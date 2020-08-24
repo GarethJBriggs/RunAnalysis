@@ -1,4 +1,4 @@
-        rename_(pilot_df, "tBodyAcc-mean()-X" = V1, "tBodyAcc-mean()-Y" = V2, 
+dslab_df <- rename_(ds_df, "tBodyAcc-mean()-X" = V1, "tBodyAcc-mean()-Y" = V2, 
                 "tBodyAcc-mean()-Z" = V3, "tBodyAcc-std()-X" = V4, 
                 "tBodyAcc-std()-Y" = V5, "tBodyAcc-std()"-Z = V6, 
                 "tBodyAcc-mad()-X" = V7, "tBodyAcc-mad()-Y" = V8, 
@@ -51,4 +51,38 @@
                 "tBodyAccJerk-min()-Y" = V94, "tBodyAccJerk-min()-Z" = V95, 
                 "tBodyAccJerk-sma()" = V96, "tBodyAccJerk-energy()-X" = V97, 
                 "tBodyAccJerk-energy()-Y" = V98, "tBodyAccJerk-energy()-Z" = 
-                V99, "tBodyAccJerk-iqr()-X" = V100)
+                V99, "tBodyAccJerk-iqr()-X" = V100, "tBodyAccJerk-iqr()-Y" = 
+                V101, "tBodyAccJerk-iqr()-Z" = V102, "tBodyAccJerk-entropy()-X"
+                = V103, "tBodyAccJerk-entropy()-Y" = V104, 
+                "tBodyAccJerk-entropy()-Z" = V105, "tBodyAccJerk-arCoeff()-X,1"
+                = V106, "tBodyAccJerk-arCoeff()-X,2" = V107, 
+                "tBodyAccJerk-arCoeff()-X,3" = V108, 
+                "tBodyAccJerk-arCoeff()-X,4" = V109, 
+                "tBodyAccJerk-arCoeff()-Y,1" = V110, 
+                "tBodyAccJerk-arCoeff()-Y,2" = V111, 
+                "tBodyAccJerk-arCoeff()-Y,3" = V112,
+                "tBodyAccJerk-arCoeff()-Y,4" = V113,
+                "tBodyAccJerk-arCoeff()-Z,1" = V114,
+                "tBodyAccJerk-arCoeff()-Z,2" = V115,
+                "tBodyAccJerk-arCoeff()-Z,3" = V116,
+                "tBodyAccJerk-arCoeff()-Z,4" = V117,
+                "tBodyAccJerk-correlation()-X,Y" = V118,
+                "tBodyAccJerk-correlation()-X,Z" = V119,
+                "tBodyAccJerk-correlation()-Y,Z" = V120,
+                "tBodyGyro-mean()-X" = V121, "tBodyGyro-mean()-Y" = V122,
+                "tBodyGyro-mean()-Z" = V123, "tBodyGyro-std()-X" = V124,
+                "tBodyGyro-std()-Y" = V125, "tBodyGyro-std()-Z" = V126,
+                "tBodyGyro-mad()-X" = V127, "tBodyGyro-mad()-Y" = V128,
+                "tBodyGyro-mad()-Z" = V129, "tBodyGyro-max()-X" = V130,
+                "tBodyGyro-max()-Y" = V131, "tBodyGyro-max()-Z" = V132,
+                "tBodyGyro-min()-X" = V133, "tBodyGyro-min()-Y" = V134,
+                "tBodyGyro-min()-Z" = V135, "tBodyGyro-sma()" = V136,
+                "tBodyGyro-energy()-X" = V137, "tBodyGyro-energy()-Y" = V138,
+                "tBodyGyro-energy()-Z" = V139, "tBodyGyro-iqr()-X" = V140,
+                "tBodyGyro-iqr()-Y" = V141, "tBodyGyro-iqr()-Z)" = V142,
+                "tBodyGyro-entropy()-X" = V143, "tBodyGyro-entropy()-Y" = V144,
+                "tBodyGyro-entropy()-Z" = V145, "tBodyGyro-arCoeff()-X,1" = 
+                V146, "tBodyGyro-arCoeff()-X,2" = V147, 
+                "tBodyGyro-arCoeff()-X,3" = V148, "tBodyGyro-arCoeff()-X,4" = 
+                V149, "tBodyGyro-arCoeff()-Y,1" = V150,        
+                )
