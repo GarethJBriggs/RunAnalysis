@@ -84,5 +84,81 @@ dslab_df <- rename_(ds_df, "tBodyAcc-mean()-X" = V1, "tBodyAcc-mean()-Y" = V2,
                 "tBodyGyro-entropy()-Z" = V145, "tBodyGyro-arCoeff()-X,1" = 
                 V146, "tBodyGyro-arCoeff()-X,2" = V147, 
                 "tBodyGyro-arCoeff()-X,3" = V148, "tBodyGyro-arCoeff()-X,4" = 
-                V149, "tBodyGyro-arCoeff()-Y,1" = V150,        
+                V149, "tBodyGyro-arCoeff()-Y,1" = V150,
+                "tBodyGyro-arCoeff()-Y,2" = V151, "tBodyGyro-arCoeff()-Y,3" = 
+                V152, "tBodyGyro-arCoeff()-Y,4" = V153, 
+                "tBodyGyro-arCoeff()-Z,1" = V154, 
+                "tBodyGyro-arCoeff()-Z,2" = V155,
+                "tBodyGyro-arCoeff()-Z,3" = V156,
+                "tBodyGyro-arCoeff()-Z,4" = V157,
+                "tBodyGyro-correlation()-X,Y" = V158,
+                "tBodyGyro-correlation()-X,Z" = V159,
+                "tBodyGyro-correlation()-Y,Z" = V160,
+                "tBodyGyroJerk-mean()-X" = V161, "tBodyGyroJerk-mean()-Y" = 
+                V162, "tBodyGyroJerk-mean()-Z" = V163, "tBodyGyroJerk-std()-X"
+                = V164, "tBodyGyroJerk-std()-Y" = V165, "tBodyGyroJerk-std()-Z"
+                = V166, "tBodyGyroJerk-mad()-X" = V167, "tBodyGyroJerk-mad()-Y"
+                = V168, "tBodyGyroJerk-mad()-Z" = V169, "tBodyGyroJerk-max()-X"
+                = V170, "tBodyGyroJerk-max()-Y" = V171, "tBodyGyroJerk-max()-Z"
+                = V172, "tBodyGyroJerk-min()-X" = V173, "tBodyGyroJerk-min()-Y"
+                = V174, "tBodyGyroJerk-min()-Z" = V175, "tBodyGyroJerk-sma()"
+                = V176, "tBodyGyroJerk-energy()-X" = V177, 
+                "tBodyGyroJerk-energy()-Y" = V178, "tBodyGyroJerk-energy()-Z" = 
+                V179, "tBodyGyroJerk-iqr()-X" = V180, "tBodyGyroJerk-iqr()-Y" +
+                V181, "tBodyGyroJerk-iqr()-Z" = V182, 
+                "tBodyGyroJerk-entropy()-X" = V183, "tBodyGyroJerk-entropy()-Y"
+                = V184, "tBodyGyroJerk-entropy()-Z" = V185,
+                "tBodyGyroJerk-arCoeff()-X,1" = V186,
+                "tBodyGyroJerk-arCoeff()-X,2" = V187,
+                "tBodyGyroJerk-arCoeff()-X,3" = V188,
+                "tBodyGyroJerk-arCoeff()-X,4" = V189,
+                "tBodyGyroJerk-arCoeff()-Y,1" = V190,
+                "tBodyGyroJerk-arCoeff()-Y,2" = V191,
+                "tBodyGyroJerk-arCoeff()-Y,3" = V192,
+                "tBodyGyroJerk-arCoeff()-Y,4" = V193,
+                "tBodyGyroJerk-arCoeff()-Z,1" = V194,
+                "tBodyGyroJerk-arCoeff()-Z,2" = V195,
+                "tBodyGyroJerk-arCoeff()-Z,3" = V196,
+                "tBodyGyroJerk-arCoeff()-Z,4" = V197,
+                "tBodyGyroJerk-correlation()-X,Y" = V198,
+                "tBodyGyroJerk-correlation()-X,Z" = V199,
+                "tBodyGyroJerk-correlation()-Y,Z" = V200,
+                "tBodyAccMag-mean()" = V201, "tBodyAccMag-std()" = V202,
+                "tBodyAccMag-mad()" = V203, "tBodyAccMag-max()" = V204,
+                "tBodyAccMag-min()" = V205, "tBodyAccMag-sma()" = V206,
+                "tBodyAccMag-energy()" = V207, "tBodyAccMag-iqr()" = V208,
+                "tBodyAccMag-entropy()" = V209, "tBodyAccMag-arCoeff()1" = V210,
+                "tBodyAccMag-arCoeff()2" = V211, "tBodyAccMag-arCoeff()3" = 
+                V212, "tBodyAccMag-arCoeff()4" = V213, "tGravityAccMag-mean()"
+                = V214, "tGravityAccMag-std()" = V215, "tGravityAccMag-mad()"
+                = V216, "tGravityAccMag-max()" = V217, "tGravityAccMag-min()"
+                = V218, "tGravityAccMag-sma()" = V219, "tGravityAccMag-energy()"
+                = V220, "tGravityAccMag-iqr()" = V221, 
+                "tGravityAccMag-entropy()" = V222, "tGravityAccMag-arCoeff()1"
+                = V223, "tGravityAccMag-arCoeff()2" = V224,
+                "tGravityAccMag-arCoeff()3" = V225, "tGravityAccMag-arCoeff()4"
+                = V226, "tBodyAccJerkMag-mean()" = V227, "tBodyAccJerkMag-std()"
+                = V228, "tBodyAccJerkMag-mad()" = V229, "tBodyAccJerkMag-max()"
+                = V230, "tBodyAccJerkMag-min()" = V231, "tBodyAccJerkMag-sma()"
+                = V232, "tBodyAccJerkMag-energy()" = V233,
+                "tBodyAccJerkMag-iqr()" = V234, "tBodyAccJerkMag-entropy()" =
+                V235, "tBodyAccJerkMag-arCoeff()1" = V236,
+                "tBodyAccJerkMag-arCoeff()2" = V237, 
+                "tBodyAccJerkMag-arCoeff()3" = V238, 
+                "tBodyAccJerkMag-arCoeff()4" = V239,
+                "tBodyGyroMag-mean()" = V240, "tBodyGyroMag-std()" = V241,
+                "tBodyGyroMag-mad()" = V242, "tBodyGyroMag-max()" = V243,
+                "tBodyGyroMag-min()" = V244, "tBodyGyroMag-sma()" = V245,
+                "tBodyGyroMag-energy()" = V246, "tBodyGyroMag-iqr()" = V247,
+                "tBodyGyroMag-entropy()" = V248, "tBodyGyroMag-arCoeff()1" = 
+                V249, "tBodyGyroMag-arCoeff()2" = V250, 
+                
+                
+                
+                
+                
+                
+                
+                
+                
                 )
