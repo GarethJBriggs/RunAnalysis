@@ -19,15 +19,24 @@ library(dplyr)
         ## merges the subject and labels columns together
         sub_act_df <- cbind(subjects_col, activities_col)
         ## reads the features file
-        features <- read.table("features.txt")
+        feat <- read.table("features.txt")
         ## uses regular expressions to filter the std and mean data labels and column number 
-        old_names <- features[grep('[Ss]td\\(\\)|[Mm]ean\\(\\)', features$V2),]
-        ## prints out old_names df
-        old_names
+        old_names_df <- feat[grep('[Ss]td\\(\\)|[Mm]ean\\(\\)', feat$V2),]
         ##subsets test and train primary dataset to the columns contains mean and std data
-        ds_sub <- ds_df[, old_names$V1]
+        ds_sub <- ds_df[, old_names_df$V1]
         ## creates a df containing subjects, activity and primary data columns
         raw_mge_df <- cbind(sub_act_df, ds_sub)
-        raw_mge_df        
+        ## codes for the activities variables
+        raw_mge_df$activity <- recode(raw_mge_df$activity, "1" = "walking", 
+        "2" = "walkingUpstairs", "3" = "walkingDownstairs", "4" = "sitting", 
+        "5" = "standing", "6" = "laying" )    
+        ## groups raw_mage df by subject and activity
+        sub_act_grp <- group_by(raw_mge_df, subject, activity) 
+        ## Summerises the means of all column variables by subject and activity
+        tidy_df <- summarise(sub_act_grp, across(.cols = V1:V543, .fns = mean))
+        tidy_df<- as.data.frame(tidy_df)
                 
         
+        
+                
+                
