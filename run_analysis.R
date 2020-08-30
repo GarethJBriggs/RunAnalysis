@@ -89,7 +89,7 @@ library(dplyr)
         timeBodyAccelerationXaxisMean:frequencyBodyGyroscopeJerkMagnitudeStd, 
         .fns = mean))
         tidy_df<- as.data.frame(tidy_df)
-                
+        tidy_df        
         
         
                 
