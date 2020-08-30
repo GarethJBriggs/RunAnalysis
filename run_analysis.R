@@ -19,9 +19,9 @@ library(dplyr)
         ## merges the subject and labels columns together
         sub_act_df <- cbind(subjects_col, activities_col)
         ## reads the features file
-        feat <- read.table("features.txt")
+        feat_df <- read.table("features.txt")
         ## uses regular expressions to filter the std and mean data labels and column number 
-        old_names_df <- feat[grep('[Ss]td\\(\\)|[Mm]ean\\(\\)', feat$V2),]
+        old_names_df <- feat_df[grep('[Ss]td\\(\\)|[Mm]ean\\(\\)', feat_df$V2),]
         ##subsets test and train primary dataset to the columns contains mean and std data
         ds_sub <- ds_df[, old_names_df$V1]
         ## creates a df containing subjects, activity and primary data columns
