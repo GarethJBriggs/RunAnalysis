@@ -85,11 +85,11 @@ library(dplyr)
                              frequencyBodyGyroscopeJerkMagnitudeMean = V542,
                              frequencyBodyGyroscopeJerkMagnitudeStd = V543)
         sub_act_grp <- group_by(raw_mge_df, subject, activity) 
-        run_analysis_df <- summarise(sub_act_grp, across(.cols = 
+        tidy_df <- summarise(sub_act_grp, across(.cols = 
         timeBodyAccelerationXaxisMean:frequencyBodyGyroscopeJerkMagnitudeStd, 
         .fns = mean))
-        run_analysis_df<- as.data.frame(run_analysis_df)
-        run_analysis_df        
+        tidy_df<- as.data.frame(tidy_df)
+        tidy_df        
         
         
                 
