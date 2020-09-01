@@ -40,7 +40,7 @@ data <- read.table(file_path, header = TRUE)
 
  &nbsp; view(data)
 
-### References:
+### References
 
 
 **Journals**
