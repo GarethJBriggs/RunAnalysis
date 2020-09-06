@@ -38,7 +38,7 @@ data <- read.table(file_path, header = TRUE)
 
  &nbsp;library(utils)
 
- &nbsp; view(data)
+ &nbsp; View(data)
 
 ### References
 
